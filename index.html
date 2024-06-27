@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>    
+    <section class = "content">
+    <header>        
+        <h1>Bulls and cows</h1>
+        <button class = "btn rules">Rules</button>
+    </header>
+    <main>
+        <section class = "gameplay">
+        <input type = "number" class = "input-number">
+        <p class = "input-hint">Input 4-digit number. </p>
+        <p class = "input-hint">Digits shouldn't be repeated!</p>       
+        <table>
+            <tr>
+                <td>Input number</td>
+                <td>Bulls</td>
+                <td>Cows</td>
+            </tr>            
+        </table>
+        <dialog class = "rules-modal">
+            <p>The goal of the game is to uncover the secret number chosen by computer. 
+                The computer indicates the number of matches in your proposition.</p>
+            <p>Notes:</p>
+            <ul>
+                <li>All digits in the secret number are different.</li>
+                <li>If your try has matching digits on the exact places, they are Bulls.</li>
+                <li>If you have digits from the secret number, but not on the right places, they are Cows.</li>                
+            </ul>
+            <p>Example:</p>
+            <p>secret number: 3892</p>
+            <p>your try: 5372 </p>
+            <p>result: 1 bull and 1 cow</p>
+            <div class="close-modal"><button class = "btn close-modal-btn">Close</button></div>
+        </dialog>
+        </section>
+        <section class = "communication">
+            <p class = "info-message">Start guessing</p>
+            <button class = "btn reset">Play again</button>
+        </section>
+
+        
+    </main>
+    </section>
+
+	<script src="script.js"></script>
+  </body>
+</html>

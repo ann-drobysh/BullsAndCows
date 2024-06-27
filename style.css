@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 10px;
+    
+}
+
+.content {
+    max-width: 900px;
+    min-height: 400px;    
+    background-color: rgb(248, 228, 210);
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 20px;
+
+    
+}
+
+header {
+    max-width: 900px;
+    min-height: 100px;    
+    margin: auto;       
+}
+
+h1 {
+    text-align: center;    
+    padding-top: 25px;
+}
+
+.btn {
+    background-color: rgb(208, 222, 249);
+    border-radius: 25px;    
+}
+
+.rules {    
+    position: relative;
+    top:-50px;
+    width: 100px;
+    height: 30px;
+}
+
+.reset {
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.input-number {
+    margin-left: 100px;
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+
+table {
+    position: relative;
+    top: -125px;
+    left: 520px;    
+}
+
+td {
+    min-width: 70px;
+    max-height: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gameplay {
+    padding-top: 15px;
+}
+
+.communication {
+    padding-top: 45px;
+    text-align: center;
+}
+
+.info-message {
+    font-size: 30px;
+    font-weight: bold;
+}
+ .input-hint {
+    font-size: 16px;
+    margin-left: 100px;
+ }
+
+.rules-modal {
+    max-width: 500px;
+    min-height: 200px;    
+    background-color: rgb(248, 228, 210);
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+.close-modal {
+    text-align: center;
+}
