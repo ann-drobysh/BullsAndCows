@@ -1,9 +1,7 @@
 let secretNumber, arrayForSecretNumber;
 function getRandomNumber(){
-    secretNumber = Math.round(Math.random()* 10000);
-    console.log(secretNumber);
-    arrayForSecretNumber = Array.from(String(secretNumber));
-    console.log(arrayForSecretNumber);
+    secretNumber = Math.round(Math.random()* 10000);    
+    arrayForSecretNumber = Array.from(String(secretNumber));    
     if (checkIfNumberCorrect(arrayForSecretNumber)) 
         {return arrayForSecretNumber} 
     else {return getRandomNumber()};    
@@ -27,8 +25,7 @@ function checkIfNumberCorrect(number) {
 }
 
 document.querySelector('.attempt').addEventListener("click", function(){
-    let numberInputByUser = document.querySelector('.input-number').value;
-    console.log(numberInputByUser);    
+    let numberInputByUser = document.querySelector('.input-number').value;       
     let arrayForUsersNumber = Array.from(String(numberInputByUser));
     if (checkIfNumberCorrect(arrayForUsersNumber)) 
         {
@@ -58,9 +55,7 @@ function countBullsAndCows(computerNumber, userNumber) {
             else if (computerNumber[i] == userNumber[j] && i != j){cows += 1;}
             else {continue;}
         }
-    }
-    console.log(bulls);
-    console.log(cows);
+    }    
     let table = document.querySelector('.table');
     let row = table.insertRow();
     let cell1 = row.insertCell();
