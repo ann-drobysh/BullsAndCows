@@ -17,9 +17,13 @@
     <main>
         <section class = "gameplay">
         <input type = "number" class = "input-number">
-        <p class = "input-hint">Input 4-digit number. </p>
-        <p class = "input-hint">Digits shouldn't be repeated!</p>       
-        <table>
+        <button class = "btn attempt">Attempt</button>
+        <div class = "area-for-hint">
+        <p class = "input-hint-error">Number invalid. Please enter 4-digit number without repeating digits!</p>
+        <p class = "input-hint">Input 4-digit number. </p>   
+        <p class = "input-hint">Digits shouldn't be repeated!</p>
+        </div>       
+        <table class = "table">
             <tr>
                 <td>Input number</td>
                 <td>Bulls</td>
@@ -42,10 +46,10 @@
             <div class="close-modal"><button class = "btn close-modal-btn">Close</button></div>
         </dialog>
         </section>
-        <section class = "communication">
-            <p class = "info-message">Start guessing</p>
+        <dialog class = "communication">
+            <p class = "info-message">You win!</p>
             <button class = "btn reset">Play again</button>
-        </section>
+        </dialog>
 
         
     </main>

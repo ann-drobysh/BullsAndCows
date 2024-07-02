@@ -47,6 +47,7 @@ h1 {
 
 .input-number {
     margin-left: 100px;
+    margin-bottom: 20px;
     width: 200px;
     height: 40px;
     font-size: 25px;
@@ -82,7 +83,8 @@ td {
 }
  .input-hint {
     font-size: 16px;
-    margin-left: 100px;
+    margin-left: 100px; 
+    color:rgb(6, 6, 6);   
  }
 
 .rules-modal {
@@ -96,4 +98,29 @@ td {
 
 .close-modal {
     text-align: center;
+}
+
+.attempt {
+    position: relative;
+    top: 38px;
+    left: -150px;
+}
+
+
+.input-hint-error {    
+    content-visibility: hidden;
+}
+
+.input-hint-visible {
+    color:rgb(207, 18, 34);
+    content-visibility: visible;
+}
+
+.communication {
+    max-width: 500px;
+    min-height: 100px;    
+    background-color: rgb(248, 228, 210);
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
 }
