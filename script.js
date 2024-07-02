@@ -46,6 +46,7 @@ document.querySelector('.input-number').addEventListener("focus", function() {
 
 function countBullsAndCows(computerNumber, userNumber) {
     if (computerNumber.toString() === userNumber.toString()) {
+        document.querySelector('.info-message').innerHTML = `You won! Guessed number is ${computerNumber.join('')}`;
         return document.querySelector('.communication').showModal();
     }
     else {     
